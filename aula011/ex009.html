@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema para Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema para Nacionalidade</h1>
+    <p>Você é de qual país?</p>
+    <input type="text" name="txtname" id="txtname">
+    <input type="button" value="Verificar" onclick="origem()">
+    <div id="res">
+
+    </div>
+    <script>
+        function origem() {
+            var txtn = window.document.querySelector('input#txtname')
+            var res = window.document.querySelector('div#res')
+            var pais = txtn.value
+            if (pais == 'Brasil') {
+                res.innerHTML = `<p>Você é <strong>Brasileiro!</strong></p>`
+            }else {
+                res.innerHTML = `<p>Você é <strong>Estrangeiro!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
