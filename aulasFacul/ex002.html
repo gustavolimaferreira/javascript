@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Leitura do sexo digitado pelo usuário
+        var sexo = prompt("Dígite o sexo (M/F): ");
+        var sexo = sexo.ToUpperCase();
+
+        //Verificar se é válido
+        if (sexo == "M" || sexo == "F") {
+            if (sexo == "M") {
+                //Sexo Másculino
+                alert("Sexo Másculino");
+            }
+            //sexo feminino
+            alert("Sexo Feminino");
+        }else {
+            //Sexo inválido
+            alert("Sexo inválido");
+        }
+        
+    </script>
+</body>
+</html>
